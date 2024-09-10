@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class UserDAO {
     public static boolean  isExists(String email) throws SQLException {
         Connection connection= MyConnection.getConnection();
-        PreparedStatement ps=connection.prepareStatement("select email from user");
+        PreparedStatement ps=connection.prepareStatement("select email from users");
         ResultSet rs=ps.executeQuery();
         while (rs.next()){
             String e=rs.getString(1);
