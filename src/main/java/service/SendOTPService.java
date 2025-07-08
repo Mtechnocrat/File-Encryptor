@@ -32,7 +32,7 @@ public class SendOTPService {
         // Get the Session object and pass your Gmail credentials
         Session session = Session.getInstance(properties,new jakarta.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(from, "oywbbketxcoapgmu");
+                return new PasswordAuthentication(from, "cjtkgtybpegqjdcm");
             }
         });
 
